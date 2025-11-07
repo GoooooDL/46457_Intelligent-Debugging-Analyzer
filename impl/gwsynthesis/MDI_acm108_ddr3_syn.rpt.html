@@ -1,0 +1,1507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ACM2108\DDS_Module.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ACM2108\acm2108_test.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ACM2108\key_filter.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ACM2108\sin_rom_a8d8.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ACM2108\square_wave_rom_a8d8.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ACM2108\triangular_rom_a8d8.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\acm2108_ddr3_udp.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ad_8bit_to_16bit.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\cmd_rx.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ddr3_memory_interface\ddr3_memory_interface.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ddr_pll\ddr_pll.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\ddr_pll\ddr_pll_mod.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\eth_cmd.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\eth_pll\eth_pll.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\eth_pll\eth_pll_mod.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\eth_send_ctrl.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\eth_udp_gmii\crc32_d8.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\eth_udp_gmii\eth_udp_rx_gmii.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\eth_udp_gmii\eth_udp_tx_gmii.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\eth_udp_gmii\ip_checksum.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\fifo_rx\fifo_rx.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\fifo_tx\fifo_tx.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\gmii_rgmii_gmii\gmii_to_rgmii.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\gmii_rgmii_gmii\rgmii_to_gmii.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\gowin_pll\gowin_pll.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\gowin_pll\gowin_pll_mod.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\pll_init.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\pll_mDRP_intf.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\rd_data_fifo\rd_data_fifo.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\speed_ctrl.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\state_ctrl.v<br>
+C:\Users\24165\Desktop\acm2108_ddr3_udp\src\wr_data_fifo\wr_data_fifo.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Tool Version</td>
+<td>V1.9.12 (64-bit)</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW5A-LV25UG324C2/I1</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW5A-25</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>A</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Fri Oct 24 10:12:53 2025
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2025 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>acm2108_ddr3_udp</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 933.816MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.796s, Elapsed time = 0h 0m 0.792s, Peak memory usage = 933.816MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.312s, Elapsed time = 0h 0m 0.322s, Peak memory usage = 933.816MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.687s, Elapsed time = 0h 0m 0.68s, Peak memory usage = 933.816MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.296s, Elapsed time = 0h 0m 0.299s, Peak memory usage = 933.816MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.071s, Peak memory usage = 933.816MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.04s, Peak memory usage = 933.816MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.03s, Peak memory usage = 933.816MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.546s, Elapsed time = 0h 0m 0.542s, Peak memory usage = 933.816MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.1s, Peak memory usage = 933.816MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.05s, Peak memory usage = 933.816MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s, Peak memory usage = 933.816MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.359s, Elapsed time = 0h 0m 0.45s, Peak memory usage = 933.816MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.406s, Elapsed time = 0h 0m 0.41s, Peak memory usage = 933.816MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s, Peak memory usage = 933.816MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>86</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>83</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>17</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>45</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIOBUF</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspELVDS_OBUF</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspELVDS_IOBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>5251</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>623</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>123</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>4501</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>4596</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>613</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>1634</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>2349</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>552</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>552</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>60</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>60</td>
+</tr>
+<tr>
+<td class="label"><b>IOLOGIC </b></td>
+<td>87</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIDDR</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspODDR</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIDES8_MEM</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER8</td>
+<td>24</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER8_MEM</td>
+<td>20</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIODELAY</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM </b></td>
+<td>21</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
+<td>14</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPX9B</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsppROM</td>
+<td>3</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspCLKDIV</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDQS</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDDRDLL</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspPLLA</td>
+<td>3</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>5208(4656 LUT, 552 ALU) / 23040</td>
+<td>23%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>5251 / 23685</td>
+<td>23%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>0 / 23685</td>
+<td>0%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>5251 / 23685</td>
+<td>23%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>21 / 56</td>
+<td>38%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk</td>
+<td>Base</td>
+<td>20.000</td>
+<td>50.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td> </td>
+<td> </td>
+<td>clk_ibuf/I </td>
+</tr>
+<tr>
+<td>2</td>
+<td>rgmii_rx_clk_i</td>
+<td>Base</td>
+<td>8.000</td>
+<td>125.000</td>
+<td>0.000</td>
+<td>4.000</td>
+<td> </td>
+<td> </td>
+<td>rgmii_rx_clk_i_ibuf/I </td>
+</tr>
+<tr>
+<td>3</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+<td>Generated</td>
+<td>20.000</td>
+<td>50.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0 </td>
+</tr>
+<tr>
+<td>4</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+<td>Generated</td>
+<td>8.000</td>
+<td>125.000</td>
+<td>0.000</td>
+<td>4.000</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2 </td>
+</tr>
+<tr>
+<td>5</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT3.default_gen_clk</td>
+<td>Generated</td>
+<td>20.000</td>
+<td>50.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT3 </td>
+</tr>
+<tr>
+<td>6</td>
+<td>eth_pll/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+<td>Generated</td>
+<td>8.000</td>
+<td>125.000</td>
+<td>0.000</td>
+<td>4.000</td>
+<td>rgmii_rx_clk_i_ibuf/I</td>
+<td>rgmii_rx_clk_i</td>
+<td>eth_pll/u_pll/PLLA_inst/CLKOUT0 </td>
+</tr>
+<tr>
+<td>7</td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+<td>Generated</td>
+<td>2.500</td>
+<td>400.000</td>
+<td>0.000</td>
+<td>1.250</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2 </td>
+</tr>
+<tr>
+<td>8</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>10.000</td>
+<td>100.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2</td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk</td>
+<td>50.000(MHz)</td>
+<td>206.101(MHz)</td>
+<td>8</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+<td>50.000(MHz)</td>
+<td>155.642(MHz)</td>
+<td>9</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+<td>125.000(MHz)</td>
+<td>287.853(MHz)</td>
+<td>5</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>4</td>
+<td>eth_pll/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+<td>125.000(MHz)</td>
+<td>139.024(MHz)</td>
+<td>12</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+<td>400.000(MHz)</td>
+<td>1394.296(MHz)</td>
+<td>1</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>100.000(MHz)</td>
+<td>216.450(MHz)</td>
+<td>3</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-0.351</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>1.917</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>1.566</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[F]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.290</td>
+<td>0.290</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3689</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.590</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_1_s0/CLK</td>
+</tr>
+<tr>
+<td>0.896</td>
+<td>0.306</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>11</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.196</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_1_s/I0</td>
+</tr>
+<tr>
+<td>1.617</td>
+<td>0.421</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_1_s/F</td>
+</tr>
+<tr>
+<td>1.917</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs/HOLD</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>1.250</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+</tr>
+<tr>
+<td>1.738</td>
+<td>0.488</td>
+<td>tCL</td>
+<td>FF</td>
+<td>64</td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2</td>
+</tr>
+<tr>
+<td>2.018</td>
+<td>0.280</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs/FCLK</td>
+</tr>
+<tr>
+<td>1.983</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+<tr>
+<td>1.566</td>
+<td>-0.417</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.178</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.421, 31.726%; route: 0.600, 45.214%; tC2Q: 0.306, 23.060%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-0.351</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>1.917</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>1.566</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[F]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.290</td>
+<td>0.290</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3689</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.590</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_0_s0/CLK</td>
+</tr>
+<tr>
+<td>0.896</td>
+<td>0.306</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>11</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.196</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_0_s/I0</td>
+</tr>
+<tr>
+<td>1.617</td>
+<td>0.421</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_0_s/F</td>
+</tr>
+<tr>
+<td>1.917</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs/HOLD</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>1.250</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+</tr>
+<tr>
+<td>1.738</td>
+<td>0.488</td>
+<td>tCL</td>
+<td>FF</td>
+<td>64</td>
+<td>ddr_pll/u_pll/PLLA_inst/CLKOUT2</td>
+</tr>
+<tr>
+<td>2.018</td>
+<td>0.280</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs/FCLK</td>
+</tr>
+<tr>
+<td>1.983</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+<tr>
+<td>1.566</td>
+<td>-0.417</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.178</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.421, 31.726%; route: 0.600, 45.214%; tC2Q: 0.306, 23.060%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>0.484</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>23.974</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>24.458</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>acm2108_test/MODE_0_s1</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>acm2108_test/DDS_Module/DA_Data_0_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.244</td>
+<td>0.244</td>
+<td>tCL</td>
+<td>RR</td>
+<td>744</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>20.544</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/MODE_0_s1/CLK</td>
+</tr>
+<tr>
+<td>20.850</td>
+<td>0.306</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>38</td>
+<td>acm2108_test/MODE_0_s1/Q</td>
+</tr>
+<tr>
+<td>21.150</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n81_s37/I2</td>
+</tr>
+<tr>
+<td>21.519</td>
+<td>0.369</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>acm2108_test/DDS_Module/n81_s37/F</td>
+</tr>
+<tr>
+<td>21.819</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n81_s33/I0</td>
+</tr>
+<tr>
+<td>22.240</td>
+<td>0.421</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n81_s33/F</td>
+</tr>
+<tr>
+<td>22.540</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n81_s39/I0</td>
+</tr>
+<tr>
+<td>22.961</td>
+<td>0.421</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n81_s39/F</td>
+</tr>
+<tr>
+<td>23.261</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n81_s38/I1</td>
+</tr>
+<tr>
+<td>23.674</td>
+<td>0.413</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n81_s38/F</td>
+</tr>
+<tr>
+<td>23.974</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/DA_Data_0_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>24.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+</tr>
+<tr>
+<td>24.244</td>
+<td>0.244</td>
+<td>tCL</td>
+<td>RR</td>
+<td>65</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2</td>
+</tr>
+<tr>
+<td>24.544</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/DA_Data_0_s1/CLK</td>
+</tr>
+<tr>
+<td>24.509</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>acm2108_test/DDS_Module/DA_Data_0_s1</td>
+</tr>
+<tr>
+<td>24.458</td>
+<td>-0.051</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/DA_Data_0_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>4.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 1.624, 47.347%; route: 1.500, 43.732%; tC2Q: 0.306, 8.921%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>0.484</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>23.974</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>24.458</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>acm2108_test/MODE_0_s1</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>acm2108_test/DDS_Module/DA_Data_1_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.244</td>
+<td>0.244</td>
+<td>tCL</td>
+<td>RR</td>
+<td>744</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>20.544</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/MODE_0_s1/CLK</td>
+</tr>
+<tr>
+<td>20.850</td>
+<td>0.306</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>38</td>
+<td>acm2108_test/MODE_0_s1/Q</td>
+</tr>
+<tr>
+<td>21.150</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n80_s37/I2</td>
+</tr>
+<tr>
+<td>21.519</td>
+<td>0.369</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>acm2108_test/DDS_Module/n80_s37/F</td>
+</tr>
+<tr>
+<td>21.819</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n80_s33/I0</td>
+</tr>
+<tr>
+<td>22.240</td>
+<td>0.421</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n80_s33/F</td>
+</tr>
+<tr>
+<td>22.540</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n80_s39/I0</td>
+</tr>
+<tr>
+<td>22.961</td>
+<td>0.421</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n80_s39/F</td>
+</tr>
+<tr>
+<td>23.261</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n80_s38/I1</td>
+</tr>
+<tr>
+<td>23.674</td>
+<td>0.413</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n80_s38/F</td>
+</tr>
+<tr>
+<td>23.974</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/DA_Data_1_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>24.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+</tr>
+<tr>
+<td>24.244</td>
+<td>0.244</td>
+<td>tCL</td>
+<td>RR</td>
+<td>65</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2</td>
+</tr>
+<tr>
+<td>24.544</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/DA_Data_1_s1/CLK</td>
+</tr>
+<tr>
+<td>24.509</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>acm2108_test/DDS_Module/DA_Data_1_s1</td>
+</tr>
+<tr>
+<td>24.458</td>
+<td>-0.051</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/DA_Data_1_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>4.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 1.624, 47.347%; route: 1.500, 43.732%; tC2Q: 0.306, 8.921%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>0.484</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>23.974</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>24.458</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>acm2108_test/MODE_0_s1</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>acm2108_test/DDS_Module/DA_Data_2_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.244</td>
+<td>0.244</td>
+<td>tCL</td>
+<td>RR</td>
+<td>744</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>20.544</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/MODE_0_s1/CLK</td>
+</tr>
+<tr>
+<td>20.850</td>
+<td>0.306</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>38</td>
+<td>acm2108_test/MODE_0_s1/Q</td>
+</tr>
+<tr>
+<td>21.150</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n79_s37/I2</td>
+</tr>
+<tr>
+<td>21.519</td>
+<td>0.369</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>acm2108_test/DDS_Module/n79_s37/F</td>
+</tr>
+<tr>
+<td>21.819</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n79_s33/I0</td>
+</tr>
+<tr>
+<td>22.240</td>
+<td>0.421</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n79_s33/F</td>
+</tr>
+<tr>
+<td>22.540</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n79_s39/I0</td>
+</tr>
+<tr>
+<td>22.961</td>
+<td>0.421</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n79_s39/F</td>
+</tr>
+<tr>
+<td>23.261</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n79_s38/I1</td>
+</tr>
+<tr>
+<td>23.674</td>
+<td>0.413</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/n79_s38/F</td>
+</tr>
+<tr>
+<td>23.974</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/DA_Data_2_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>24.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2.default_gen_clk</td>
+</tr>
+<tr>
+<td>24.244</td>
+<td>0.244</td>
+<td>tCL</td>
+<td>RR</td>
+<td>65</td>
+<td>Gowin_PLL/u_pll/PLLA_inst/CLKOUT2</td>
+</tr>
+<tr>
+<td>24.544</td>
+<td>0.300</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/DA_Data_2_s1/CLK</td>
+</tr>
+<tr>
+<td>24.509</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>acm2108_test/DDS_Module/DA_Data_2_s1</td>
+</tr>
+<tr>
+<td>24.458</td>
+<td>-0.051</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>acm2108_test/DDS_Module/DA_Data_2_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>4.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 1.624, 47.347%; route: 1.500, 43.732%; tC2Q: 0.306, 8.921%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.300, 100.000%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

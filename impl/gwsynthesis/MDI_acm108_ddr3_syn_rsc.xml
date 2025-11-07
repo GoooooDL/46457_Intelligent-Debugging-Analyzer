@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="acm2108_ddr3_udp" Register="102" Lut="28" T_Register="5251(102)" T_Alu="552(0)" T_Lut="4656(28)" T_Bsram="21(0)">
+ <SubModule name="Gowin_PLL" T_Register="101(0)" T_Alu="18(0)" T_Lut="151(0)" T_Bsram="1(0)">
+  <SubModule name="u_pll"/>
+  <SubModule name="u_pll_init" Register="101" Alu="18" Lut="151" Bsram="1" T_Register="101(101)" T_Alu="18(18)" T_Lut="151(151)" T_Bsram="1(1)"/>
+ </SubModule>
+ <SubModule name="eth_pll">
+  <SubModule name="u_pll"/>
+ </SubModule>
+ <SubModule name="rgmii_to_gmii"/>
+ <SubModule name="eth_udp_rx_gmii" Register="344" Lut="308" T_Register="364(344)" T_Alu="151(0)" T_Lut="308(308)">
+  <SubModule name="ip_checksum" Register="20" Alu="151" T_Register="20(20)" T_Alu="151(151)"/>
+ </SubModule>
+ <SubModule name="fifo_rx" Register="76" Alu="9" Lut="58" Bsram="1" T_Register="76(76)" T_Alu="9(9)" T_Lut="58(58)" T_Bsram="1(1)"/>
+ <SubModule name="eth_cmd" Register="107" Lut="10" T_Register="107(107)" T_Lut="10(10)"/>
+ <SubModule name="cmd_rx_0" Register="67" Lut="6" T_Register="67(67)" T_Lut="6(6)"/>
+ <SubModule name="speed_ctrl" Register="33" Alu="63" Lut="57" T_Register="33(33)" T_Alu="63(63)" T_Lut="57(57)"/>
+ <SubModule name="ad_8bit_to_16bit" Register="17" Alu="7" Lut="12" T_Register="17(17)" T_Alu="7(7)" T_Lut="12(12)"/>
+ <SubModule name="acm2108_test" Register="5" Alu="4" Lut="4" T_Register="100(5)" T_Alu="54(4)" T_Lut="137(4)" T_Bsram="1(0)">
+  <SubModule name="DDS_Module" Register="63" Alu="31" Lut="103" T_Register="63(63)" T_Alu="31(31)" T_Lut="103(103)" T_Bsram="1(0)">
+   <SubModule name="ddsrom_triangle" Bsram="1" T_Bsram="1(1)"/>
+  </SubModule>
+  <SubModule name="key_filter0" Register="32" Alu="19" Lut="30" T_Register="32(32)" T_Alu="19(19)" T_Lut="30(30)"/>
+ </SubModule>
+ <SubModule name="state_ctrl" Register="99" Lut="324" T_Register="99(99)" T_Lut="324(324)"/>
+ <SubModule name="ddr_pll" T_Register="101(0)" T_Alu="18(0)" T_Lut="164(0)" T_Bsram="1(0)">
+  <SubModule name="u_pll"/>
+  <SubModule name="u_pll_init" Register="101" Alu="18" Lut="164" Bsram="1" T_Register="101(101)" T_Alu="18(18)" T_Lut="164(164)" T_Bsram="1(1)"/>
+ </SubModule>
+ <SubModule name="ddr3_ctrl_2port" T_Register="3751(0)" T_Alu="165(0)" T_Lut="2824(0)" T_Bsram="16(0)">
+  <SubModule name="fifo_ddr3_adapter" Register="139" Lut="290" T_Register="333(139)" T_Alu="40(0)" T_Lut="655(290)" T_Bsram="8(0)">
+   <SubModule name="rd_data_fifo" Register="97" Alu="20" Lut="286" Bsram="4" T_Register="97(97)" T_Alu="20(20)" T_Lut="286(286)" T_Bsram="4(4)"/>
+   <SubModule name="wr_data_fifo" Register="97" Alu="20" Lut="79" Bsram="4" T_Register="97(97)" T_Alu="20(20)" T_Lut="79(79)" T_Bsram="4(4)"/>
+  </SubModule>
+  <SubModule name="DDR3_Memory_Interface_Top" Register="3418" Alu="125" Lut="2169" Bsram="8" T_Register="3418(3418)" T_Alu="125(125)" T_Lut="2169(2169)" T_Bsram="8(8)"/>
+ </SubModule>
+ <SubModule name="fifo_tx" Register="104" Alu="21" Lut="98" Bsram="1" T_Register="104(104)" T_Alu="21(21)" T_Lut="98(98)" T_Bsram="1(1)"/>
+ <SubModule name="eth_send_ctrl" Register="53" Alu="31" Lut="141" T_Register="53(53)" T_Alu="31(31)" T_Lut="141(141)"/>
+ <SubModule name="eth_udp_tx_gmii" Register="132" Lut="268" T_Register="176(132)" T_Alu="15(0)" T_Lut="338(268)">
+  <SubModule name="ip_checksum" Register="12" Alu="15" Lut="15" T_Register="12(12)" T_Alu="15(15)" T_Lut="15(15)"/>
+  <SubModule name="crc32_d8" Register="32" Lut="55" T_Register="32(32)" T_Lut="55(55)"/>
+ </SubModule>
+ <SubModule name="gmii_to_rgmii"/>
+</Module>

@@ -1,0 +1,376 @@
+[
+ {
+  "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+  "InstLine" : 2,
+  "InstName" : "acm2108_ddr3_udp",
+  "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "acm2108_ddr3_udp",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 388,
+    "InstName" : "u_pll_mDRP_intf",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/pll_mDRP_intf.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "pll_mDRP_intf"
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 194,
+    "InstName" : "Gowin_PLL",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "Gowin_PLL",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/gowin_pll/gowin_pll.v",
+      "InstLine" : 28,
+      "InstName" : "u_pll",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/gowin_pll/gowin_pll_mod.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_PLL_MOD"
+     },
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/gowin_pll/gowin_pll.v",
+      "InstLine" : 43,
+      "InstName" : "u_pll_init",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/pll_init.v",
+      "ModuleLine" : 4,
+      "ModuleName" : "PLL_INIT"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 205,
+    "InstName" : "eth_pll",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_pll/eth_pll.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "eth_pll",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_pll/eth_pll.v",
+      "InstLine" : 21,
+      "InstName" : "u_pll",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_pll/eth_pll_mod.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "eth_pll_MOD"
+     },
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_pll/eth_pll.v",
+      "InstLine" : 34,
+      "InstName" : "u_pll_init",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/pll_init.v",
+      "ModuleLine" : 4,
+      "ModuleName" : "PLL_INIT"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 211,
+    "InstName" : "rgmii_to_gmii",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/gmii_rgmii_gmii/rgmii_to_gmii.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "rgmii_to_gmii"
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 225,
+    "InstName" : "eth_udp_rx_gmii",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/eth_udp_rx_gmii.v",
+    "ModuleLine" : 18,
+    "ModuleName" : "eth_udp_rx_gmii",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/eth_udp_rx_gmii.v",
+      "InstLine" : 317,
+      "InstName" : "ip_checksum",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/ip_checksum.v",
+      "ModuleLine" : 18,
+      "ModuleName" : "ip_checksum"
+     },
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/eth_udp_rx_gmii.v",
+      "InstLine" : 506,
+      "InstName" : "crc32_d8",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/crc32_d8.v",
+      "ModuleLine" : 20,
+      "ModuleName" : "crc32_d8"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 251,
+    "InstName" : "fifo_rx",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/fifo_rx/fifo_rx.v",
+    "ModuleLine" : 469,
+    "ModuleName" : "fifo_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/fifo_rx/fifo_rx.v",
+      "InstLine" : 492,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/fifo_rx/fifo_rx.v",
+      "ModuleLine" : 13,
+      "ModuleName" : "~fifo.fifo_rx"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 263,
+    "InstName" : "eth_cmd",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_cmd.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "eth_cmd"
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 274,
+    "InstName" : "cmd_rx_0",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/cmd_rx.v",
+    "ModuleLine" : 22,
+    "ModuleName" : "cmd_rx"
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 301,
+    "InstName" : "speed_ctrl",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/speed_ctrl.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "speed_ctrl"
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 310,
+    "InstName" : "ad_8bit_to_16bit",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ad_8bit_to_16bit.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "ad_8bit_to_16bit"
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 320,
+    "InstName" : "acm2108_test",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/acm2108_test.v",
+    "ModuleLine" : 46,
+    "ModuleName" : "acm2108_test",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/acm2108_test.v",
+      "InstLine" : 92,
+      "InstName" : "DDS_Module",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/DDS_Module.v",
+      "ModuleLine" : 11,
+      "ModuleName" : "DDS_Module",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/DDS_Module.v",
+        "InstLine" : 84,
+        "InstName" : "ddsrom_sin",
+        "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/sin_rom_a8d8.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "sin_rom_a8d8"
+       },
+       {
+        "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/DDS_Module.v",
+        "InstLine" : 90,
+        "InstName" : "ddsrom_square",
+        "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/square_wave_rom_a8d8.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "square_wave_rom_a8d8"
+       },
+       {
+        "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/DDS_Module.v",
+        "InstLine" : 96,
+        "InstName" : "ddsrom_triangle",
+        "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/triangular_rom_a8d8.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "triangular_rom_a8d8"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/acm2108_test.v",
+      "InstLine" : 101,
+      "InstName" : "key_filter0",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ACM2108/key_filter.v",
+      "ModuleLine" : 11,
+      "ModuleName" : "key_filter"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 338,
+    "InstName" : "state_ctrl",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/state_ctrl.v",
+    "ModuleLine" : 18,
+    "ModuleName" : "state_ctrl"
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 399,
+    "InstName" : "ddr_pll",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr_pll/ddr_pll.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "ddr_pll",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr_pll/ddr_pll.v",
+      "InstLine" : 35,
+      "InstName" : "u_pll",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr_pll/ddr_pll_mod.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "ddr_pll_MOD"
+     },
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr_pll/ddr_pll.v",
+      "InstLine" : 49,
+      "InstName" : "u_pll_init",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/pll_init.v",
+      "ModuleLine" : 4,
+      "ModuleName" : "PLL_INIT"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 414,
+    "InstName" : "ddr3_ctrl_2port",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "ddr3_ctrl_2port",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
+      "InstLine" : 58,
+      "InstName" : "fifo_ddr3_adapter",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr3_ctrl_2port/fifo_ddr3_adapter.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "fifo_ddr3_adapter",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr3_ctrl_2port/fifo_ddr3_adapter.v",
+        "InstLine" : 343,
+        "InstName" : "rd_data_fifo",
+        "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/rd_data_fifo/rd_data_fifo.v",
+        "ModuleLine" : 1424,
+        "ModuleName" : "rd_data_fifo",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/rd_data_fifo/rd_data_fifo.v",
+          "InstLine" : 1455,
+          "InstName" : "fifo_inst",
+          "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/rd_data_fifo/rd_data_fifo.v",
+          "ModuleLine" : 13,
+          "ModuleName" : "~fifo.rd_data_fifo"
+         }
+        ]
+       },
+       {
+        "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr3_ctrl_2port/fifo_ddr3_adapter.v",
+        "InstLine" : 359,
+        "InstName" : "wr_data_fifo",
+        "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/wr_data_fifo/wr_data_fifo.v",
+        "ModuleLine" : 791,
+        "ModuleName" : "wr_data_fifo",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/wr_data_fifo/wr_data_fifo.v",
+          "InstLine" : 822,
+          "InstName" : "fifo_inst",
+          "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/wr_data_fifo/wr_data_fifo.v",
+          "ModuleLine" : 13,
+          "ModuleName" : "~fifo.wr_data_fifo"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
+      "InstLine" : 134,
+      "InstName" : "DDR3_Memory_Interface_Top",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr3_memory_interface/ddr3_memory_interface.v",
+      "ModuleLine" : 19103,
+      "ModuleName" : "DDR3_Memory_Interface_Top",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr3_memory_interface/ddr3_memory_interface.v",
+        "InstLine" : 19188,
+        "InstName" : "gw3_top",
+        "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/ddr3_memory_interface/ddr3_memory_interface.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "~GW_DDR3_PHY_MC.DDR3_Memory_Interface_Top"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 460,
+    "InstName" : "fifo_tx",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/fifo_tx/fifo_tx.v",
+    "ModuleLine" : 816,
+    "ModuleName" : "fifo_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/fifo_tx/fifo_tx.v",
+      "InstLine" : 843,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/fifo_tx/fifo_tx.v",
+      "ModuleLine" : 13,
+      "ModuleName" : "~fifo.fifo_tx"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 476,
+    "InstName" : "eth_send_ctrl",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_send_ctrl.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "eth_send_ctrl"
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 488,
+    "InstName" : "eth_udp_tx_gmii",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/eth_udp_tx_gmii.v",
+    "ModuleLine" : 21,
+    "ModuleName" : "eth_udp_tx_gmii",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/eth_udp_tx_gmii.v",
+      "InstLine" : 139,
+      "InstName" : "ip_checksum",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/ip_checksum.v",
+      "ModuleLine" : 18,
+      "ModuleName" : "ip_checksum"
+     },
+     {
+      "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/eth_udp_tx_gmii.v",
+      "InstLine" : 478,
+      "InstName" : "crc32_d8",
+      "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/eth_udp_gmii/crc32_d8.v",
+      "ModuleLine" : 20,
+      "ModuleName" : "crc32_d8"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/acm2108_ddr3_udp.v",
+    "InstLine" : 514,
+    "InstName" : "gmii_to_rgmii",
+    "ModuleFile" : "D:/GOWIN/DATA/acm108_ddr3_udp/src/gmii_rgmii_gmii/gmii_to_rgmii.v",
+    "ModuleLine" : 20,
+    "ModuleName" : "gmii_to_rgmii"
+   }
+  ]
+ }
+]
